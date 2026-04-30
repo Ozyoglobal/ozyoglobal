@@ -68,15 +68,20 @@ Tüm metinler `messages/*.json` dosyalarından yönetilir. Türkçe ana dil oldu
 
 ## GitHub
 
-Depo kökü `ozyo-global/`. Uzak bağlantı eklemek için GitHub’da **boş** bir repo oluşturun (README / .gitignore eklemeyin), ardından:
+- **Organizasyon / kullanıcı**: [Ozyoglobal](https://github.com/Ozyoglobal)
+- **Depo**: [Ozyoglobal/ozyoglobal](https://github.com/Ozyoglobal/ozyoglobal)
+
+Depo kökü `ozyo-global/`. `origin` genelde şu adrestir:
 
 ```bash
 cd ozyo-global
-git remote add origin https://github.com/KULLANICI_ADI/REPO_ADI.git
+git remote add origin https://github.com/Ozyoglobal/ozyoglobal.git   # yoksa
 git push -u origin main
 ```
 
-SSH kullanıyorsanız: `git remote add origin git@github.com:KULLANICI_ADI/REPO_ADI.git`
+SSH: `git@github.com:Ozyoglobal/ozyoglobal.git`
+
+Push için GitHub’da bu repoya yazma yetkisi olan hesap ile giriş yapılmalıdır (HTTPS’te yanlış kayıtlı kimlik 403 verir; gerekirse [kişisel erişim belirteci](https://github.com/settings/tokens) veya SSH anahtarı kullanın).
 
 ## Dağıtım (Deploy)
 
