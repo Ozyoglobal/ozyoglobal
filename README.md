@@ -66,6 +66,18 @@ Tüm metinler `messages/*.json` dosyalarından yönetilir. Türkçe ana dil oldu
 
 `components/ContactForm.tsx` içindeki `handleSubmit` fonksiyonunu gerçek bir API endpoint'i ile bağlayabilirsiniz. Önerilen: [Resend](https://resend.com) (paket zaten kurulu).
 
+## GitHub
+
+Depo kökü `ozyo-global/`. Uzak bağlantı eklemek için GitHub’da **boş** bir repo oluşturun (README / .gitignore eklemeyin), ardından:
+
+```bash
+cd ozyo-global
+git remote add origin https://github.com/KULLANICI_ADI/REPO_ADI.git
+git push -u origin main
+```
+
+SSH kullanıyorsanız: `git remote add origin git@github.com:KULLANICI_ADI/REPO_ADI.git`
+
 ## Dağıtım (Deploy)
 
 [Vercel](https://vercel.com) ile en kolay deploy edilir:
