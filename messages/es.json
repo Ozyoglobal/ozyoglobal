@@ -1,0 +1,188 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "services": "Servicios",
+    "brands": "Nuestras Marcas",
+    "contact": "Contacto",
+    "getQuote": "Pedir Presupuesto"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Descubre el Mundo, Confía en Nosotros",
+      "title": "Tu Socio Experto\nen Soluciones de\nTurismo Global",
+      "subtitle": "De Europa al Extremo Oriente, de América al Medio Oriente — servicios turísticos sin interrupciones para agencias, corporaciones y productoras.",
+      "cta": "Explorar Nuestros Servicios",
+      "ctaSecondary": "Contáctenos"
+    },
+    "imagery": {
+      "eyebrow": "Destinos",
+      "title": "Escenas seleccionadas alrededor del mundo",
+      "subtitle": "Un tablero de viajes premium que refleja operaciones fiables y experiencias memorables.",
+      "captions": {
+        "cap1": "Viajes por carretera y rutas panorámicas",
+        "cap2": "Planificación detallada para cada destino",
+        "cap3": "Escapadas costeras y playas icónicas",
+        "cap4": "Descanso tropical con sensación premium"
+      }
+    },
+    "stats": {
+      "years": "Años de Experiencia",
+      "countries": "Países",
+      "clients": "Clientes Felices",
+      "support": "Soporte 24/7"
+    },
+    "brands": {
+      "title": "Nuestras Marcas",
+      "subtitle": "Cuatro marcas especializadas ofreciendo soluciones turísticas integrales bajo un mismo techo.",
+      "learnMore": "Saber Más"
+    },
+    "services": {
+      "title": "Servicios Principales",
+      "subtitle": "Estamos contigo en cada punto del ecosistema turístico."
+    },
+    "about": {
+      "title": "¿Por Qué Ozyo Global?",
+      "text": "Fundada para brindar soluciones accesibles y simples a las agencias del sector turístico, Ozyo Global ahorra tiempo valioso usando las tecnologías del presente y del futuro. Adoptamos el valor que las organizaciones perfectamente gestionadas aportan a tu marca.",
+      "learnMore": "Saber Más"
+    },
+    "contact": {
+      "title": "Hablemos de Tu Proyecto",
+      "subtitle": "Comparte tu plan de viaje o solicitud de negocio con nosotros.",
+      "cta": "Formulario de Consulta"
+    }
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "hero": "Tu Socio Global de Confianza en Turismo",
+    "mission": {
+      "title": "Nuestra Misión",
+      "text": "Proporcionar soluciones fáciles, rápidas y confiables a las agencias del sector turístico, ahorrando tiempo valioso con las tecnologías actuales y futuras."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "text": "Proporcionar acceso a todos los servicios locales y de consultoría en Europa, América, el Extremo Oriente, el Medio Oriente, los Balcanes y los países de la CEI."
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "reliability": "Confiabilidad",
+      "innovation": "Innovación",
+      "service": "Calidad de Servicio",
+      "global": "Perspectiva Global"
+    },
+    "team": {
+      "title": "Nuestro Equipo Experto",
+      "text": "Estamos a tu disposición las 24 horas del día, los 7 días de la semana, con un equipo de expertos experimentados, apasionados y multilingües."
+    }
+  },
+  "services": {
+    "title": "Servicios",
+    "hero": "Servicios Turísticos Integrales",
+    "subtitle": "Soluciones completas en viajes, alojamiento, transporte y organización de eventos.",
+    "items": {
+      "flight": {
+        "title": "Billetes de Avión",
+        "desc": "Adquisición de billetes de avión asequibles y fiables a todos los destinos."
+      },
+      "visa": {
+        "title": "Servicios de Visado",
+        "desc": "Apoyo profesional integral en los procesos de solicitud de visado."
+      },
+      "transfer": {
+        "title": "Transfers",
+        "desc": "Transfers VIP y grupales entre aeropuertos, hoteles y recintos de eventos."
+      },
+      "accommodation": {
+        "title": "Alojamiento",
+        "desc": "Desde hoteles boutique hasta cadenas de lujo — alojamiento para cada presupuesto."
+      },
+      "tours": {
+        "title": "Tours Internacionales",
+        "desc": "Paquetes de tours internacionales con guías profesionales."
+      },
+      "guide": {
+        "title": "Guías Turísticos",
+        "desc": "Experiencias inolvidables con guías turísticos multilingües y experimentados."
+      }
+    }
+  },
+  "brands": {
+    "title": "Nuestras Marcas",
+    "hero": "Cuatro Marcas Especializadas",
+    "subtitle": "Una familia de marcas formada con profunda experiencia para cada necesidad.",
+    "dmc": {
+      "name": "Ozyo Global DMC",
+      "slug": "dmc",
+      "tagline": "Excelencia en Gestión de Destinos",
+      "short": "Servicios DMC profesionales para operaciones nacionales e internacionales.",
+      "description": "Ozyo Global DMC ofrece servicios integrales de gestión de destinos en Turquía y en todo el mundo para operadores turísticos y agencias de viajes. Gestionamos todos los procesos operativos desde el alojamiento hasta los transfers, desde actividades hasta city tours.",
+      "services": ["Gestión de Alojamiento", "Transfers Aeropuerto", "City Tours", "Organización de Actividades", "Servicios de Guía", "Soporte Vuelos y Visados"]
+    },
+    "mice": {
+      "name": "Ozyo Global MICE",
+      "slug": "mice",
+      "tagline": "Meetings, Incentives, Conferences & Exhibitions",
+      "short": "Servicio integral para eventos corporativos y programas de incentivos.",
+      "description": "Ozyo Global MICE ofrece servicio integral a clientes corporativos en congresos, seminarios, ferias, reuniones corporativas y viajes de incentivo. Planificamos cada detalle de tu evento con precisión y creamos experiencias impecables.",
+      "services": ["Organización de Congresos y Conferencias", "Programas de Viajes Incentivo", "Gestión de Eventos Corporativos", "Organización de Ferias", "Team Building", "Galas y Recepciones"]
+    },
+    "production": {
+      "name": "Ozyo Global Production",
+      "slug": "production",
+      "tagline": "Apoyo Turístico para Producciones de Cine y Publicidad",
+      "short": "Alojamiento, transporte, visado y logística para equipos de producción.",
+      "description": "Ozyo Global Production cubre todas las necesidades de viaje y logística para compañías de producción de cine, series y publicidad. Ofrecemos un servicio puntual, fiable y flexible incluso durante los calendarios de rodaje más intensos.",
+      "services": ["Alojamiento del Equipo", "Transporte de Equipos", "Billetes de Avión Grupales", "Consultoría de Visados y Permisos", "Transfers VIP", "Alquiler de Vehículos a Largo Plazo"]
+    },
+    "location": {
+      "name": "Ozyo Global Location",
+      "slug": "location",
+      "tagline": "Servicios Premier de Locaciones y Espacios",
+      "short": "Alquiler de espacios para eventos, locaciones de rodaje y propiedades exclusivas.",
+      "description": "Ozyo Global Location conecta a los clientes con los espacios más prestigiosos de Turquía, especialmente en Estambul, para eventos y producciones. Con nuestro amplio portafolio de hoteles, restaurantes, edificios históricos y propiedades privadas, encontramos el espacio de tus sueños.",
+      "services": ["Alquiler de Hoteles y Resorts", "Alquiler de Restaurantes y Venues", "Acceso a Espacios Históricos", "Fincas y Villas Privadas", "Búsqueda de Locaciones", "Decoración y Montaje"]
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "hero": "Póngase en Contacto",
+    "subtitle": "Comparte tu proyecto y nuestro equipo experto responderá rápidamente.",
+    "form": {
+      "name": "Nombre y Apellido",
+      "email": "Correo Electrónico",
+      "phone": "Teléfono",
+      "company": "Empresa / Organización",
+      "subject": "Asunto",
+      "message": "Su Mensaje",
+      "submit": "Enviar Mensaje",
+      "success": "¡Su mensaje ha sido enviado! Nos pondremos en contacto con usted a la brevedad.",
+      "error": "Ocurrió un error. Por favor, inténtelo de nuevo.",
+      "subjects": {
+        "dmc": "Servicios DMC",
+        "mice": "MICE y Eventos",
+        "production": "Apoyo Producción",
+        "location": "Espacios y Locaciones",
+        "general": "Consulta General"
+      }
+    },
+    "info": {
+      "address": "Estambul, Turquía",
+      "email": "info@ozyoglobal.com",
+      "phone": "+90 (212) 000 00 00",
+      "hours": "Lunes – Viernes, 09:00 – 18:00"
+    }
+  },
+  "footer": {
+    "tagline": "Descubre el Mundo, Confía en Nosotros.",
+    "links": "Enlaces Rápidos",
+    "brands": "Nuestras Marcas",
+    "social": "Redes Sociales",
+    "rights": "Todos los derechos reservados."
+  },
+  "common": {
+    "learnMore": "Saber Más",
+    "contactUs": "Contáctenos",
+    "backHome": "Volver al Inicio",
+    "loading": "Cargando..."
+  }
+}

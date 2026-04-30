@@ -1,0 +1,188 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "brands": "Markalarımız",
+    "contact": "İletişim",
+    "getQuote": "Teklif Al"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Dünyayı Keşfedin, Bizi Güvenin",
+      "title": "Global Turizm\nÇözümlerinde\nUzman Partner",
+      "subtitle": "Avrupa'dan Uzak Doğu'ya, Amerika'dan Orta Doğu'ya — ajanslar, kurumlar ve prodüksiyon şirketleri için kesintisiz turizm hizmetleri.",
+      "cta": "Hizmetlerimizi İnceleyin",
+      "ctaSecondary": "İletişime Geçin"
+    },
+    "imagery": {
+      "eyebrow": "Destinasyonlar",
+      "title": "Dünyanın dört bir yanından seçilmiş kareler",
+      "subtitle": "Konforlu seyahat, güçlü operasyon ve kusursuz misafir deneyimi için sahada olduğumuzu hissettiren görünümler.",
+      "captions": {
+        "cap1": "Özgür yolculuklar ve panoramik rotalar",
+        "cap2": "Her destinasyon için titiz planlama",
+        "cap3": "Özgün sahil ve ada deneyimleri",
+        "cap4": "Tropikal molalar ve premium tatil hissi"
+      }
+    },
+    "stats": {
+      "years": "Yıllık Deneyim",
+      "countries": "Ülke",
+      "clients": "Mutlu Müşteri",
+      "support": "7/24 Destek"
+    },
+    "brands": {
+      "title": "Markalarımız",
+      "subtitle": "Dört uzman marka, tek çatı altında kapsamlı turizm çözümleri.",
+      "learnMore": "Detaylı İncele"
+    },
+    "services": {
+      "title": "Temel Hizmetlerimiz",
+      "subtitle": "Turizm ekosisteminin her noktasında yanınızdayız."
+    },
+    "about": {
+      "title": "Neden Ozyo Global?",
+      "text": "Turizm sektörüne hizmet veren ajanslara kolay ve hızlı çözümler sunmak amacıyla kurulan Ozyo Global, günümüz ve gelecek teknolojilerinin desteğiyle değerli zaman tasarrufu sağlar. Doğru yönlendirme sonrası mükemmel yönetilen organizasyonların markanıza katacağı değeri benimsiyoruz.",
+      "learnMore": "Daha Fazla Öğren"
+    },
+    "contact": {
+      "title": "Projenizi Konuşalım",
+      "subtitle": "Seyahat planınızı veya iş talebinizi bizimle paylaşın.",
+      "cta": "Teklif Formu"
+    }
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "hero": "Turizmde Güvenilir Küresel Ortağınız",
+    "mission": {
+      "title": "Misyonumuz",
+      "text": "Turizm sektörüne hizmet veren ajanslara kolay, hızlı ve güvenilir çözümler sunmak. Günümüz ve gelecek teknolojilerinin desteğiyle değerli zaman tasarrufu sağlamak."
+    },
+    "vision": {
+      "title": "Vizyonumuz",
+      "text": "Avrupa, Amerika, Uzak Doğu, Orta Doğu, Balkanlar ve BDT ülkelerinde tüm yerel hizmetlere ve danışmanlık hizmetlerine erişim imkânı sunmak."
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "reliability": "Güvenilirlik",
+      "innovation": "Yenilikçilik",
+      "service": "Hizmet Kalitesi",
+      "global": "Global Perspektif"
+    },
+    "team": {
+      "title": "Uzman Ekibimiz",
+      "text": "Sektörde deneyimli, tutkulu ve çok dilli uzmanlardan oluşan ekibimizle 7/24 hizmetinizdeyiz."
+    }
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "hero": "Kapsamlı Turizm Hizmetleri",
+    "subtitle": "Seyahat, konaklama, ulaşım ve organizasyon alanında eksiksiz çözümler.",
+    "items": {
+      "flight": {
+        "title": "Uçak Bileti",
+        "desc": "Tüm destinasyonlar için uygun fiyatlı ve güvenilir uçak bileti temini."
+      },
+      "visa": {
+        "title": "Vize Hizmetleri",
+        "desc": "Vize başvuru süreçlerinde uçtan uca profesyonel destek."
+      },
+      "transfer": {
+        "title": "Transfer",
+        "desc": "Havaalanı, otel ve etkinlik alanları arasında VIP ve toplu transfer."
+      },
+      "accommodation": {
+        "title": "Konaklama",
+        "desc": "Butik otellerden lüks zincir otellere, her bütçeye uygun konaklama."
+      },
+      "tours": {
+        "title": "Yurt Dışı Turlar",
+        "desc": "Profesyonel rehberlik eşliğinde düzenlenen uluslararası tur paketleri."
+      },
+      "guide": {
+        "title": "Rehberlik",
+        "desc": "Çok dilli, deneyimli turist rehberleri ile unforgettable deneyimler."
+      }
+    }
+  },
+  "brands": {
+    "title": "Markalarımız",
+    "hero": "Uzmanlaşmış Dört Marka",
+    "subtitle": "Her ihtiyaca özel, derin uzmanlıkla şekillendirilmiş marka ailesi.",
+    "dmc": {
+      "name": "Ozyo Global DMC",
+      "slug": "dmc",
+      "tagline": "Destination Management Excellence",
+      "short": "Yurt içi ve yurt dışı operasyonlarda profesyonel DMC hizmetleri.",
+      "description": "Ozyo Global DMC, tur operatörleri ve seyahat acenteleri için Türkiye'de ve dünya genelinde kapsamlı destinasyon yönetimi hizmetleri sunar. Konaklamadan transfere, aktivitelerden şehir turlarına kadar tüm operasyonel süreçleri yönetiriz.",
+      "services": ["Konaklama Yönetimi", "Havaalanı Transferleri", "Şehir Turları", "Aktivite Organizasyonu", "Rehberlik Hizmetleri", "Uçak & Vize Desteği"]
+    },
+    "mice": {
+      "name": "Ozyo Global MICE",
+      "slug": "mice",
+      "tagline": "Meetings, Incentives, Conferences & Exhibitions",
+      "short": "Kurumsal etkinlikler ve teşvik programları için tam hizmet.",
+      "description": "Ozyo Global MICE, kurumsal müşterilere kongre, seminer, fuar, şirket toplantısı ve incentive tur organizasyonlarında uçtan uca hizmet sunar. Etkinliğinizin her detayını titizlikle planlıyor, kusursuz deneyimler yaratıyoruz.",
+      "services": ["Kongre & Konferans Organizasyonu", "Incentive Tur Programları", "Kurumsal Etkinlik Yönetimi", "Fuar Organizasyonu", "Team Building Aktiviteleri", "Gala & Davet Organizasyonu"]
+    },
+    "production": {
+      "name": "Ozyo Global Production",
+      "slug": "production",
+      "tagline": "Film & Reklam Prodüksiyonlarına Turizm Desteği",
+      "short": "Prodüksiyon ekiplerine konaklama, ulaşım, vize ve lojistik.",
+      "description": "Ozyo Global Production, film, dizi ve reklam prodüksiyon şirketleri için sahadaki tüm seyahat ve lojistik ihtiyaçlarını karşılar. Yoğun çekim takvimlerinde bile zamanında, güvenilir ve esnek hizmet sunuyoruz.",
+      "services": ["Çekim Ekibi Konaklaması", "Set Ekipmanı Ulaşımı", "Grup Uçak Bileti", "Vize & İzin Danışmanlığı", "VIP Transferler", "Uzun Dönem Araç Kiralama"]
+    },
+    "location": {
+      "name": "Ozyo Global Location",
+      "slug": "location",
+      "tagline": "Premier Mekan & Lokasyon Hizmetleri",
+      "short": "Etkinlik alanları, çekim mekânları ve özel lokasyon kiralama.",
+      "description": "Ozyo Global Location, etkinlikler ve çekimler için İstanbul başta olmak üzere Türkiye genelinde en prestijli mekânları müşterileriyle buluşturur. Oteller, restoranlar, tarihi yapılar ve özel mülklerden oluşan geniş portföyümüzle hayalinizdeki mekânı buluyoruz.",
+      "services": ["Otel & Resort Kiralama", "Restoran & Venue Kiralama", "Tarihi Mekan Erişimi", "Özel Mülk & Villa", "Çekim Lokasyonu Scouting", "Mekan Dekorasyon & Kurulum"]
+    }
+  },
+  "contact": {
+    "title": "İletişim",
+    "hero": "Bizimle İletişime Geçin",
+    "subtitle": "Projenizi paylaşın, uzman ekibimiz en kısa sürede yanıt versin.",
+    "form": {
+      "name": "Ad Soyad",
+      "email": "E-Posta",
+      "phone": "Telefon",
+      "company": "Firma / Kurum",
+      "subject": "Konu",
+      "message": "Mesajınız",
+      "submit": "Mesaj Gönder",
+      "success": "Mesajınız iletildi! En kısa sürede size geri döneceğiz.",
+      "error": "Bir hata oluştu. Lütfen tekrar deneyin.",
+      "subjects": {
+        "dmc": "DMC Hizmetleri",
+        "mice": "MICE & Etkinlik",
+        "production": "Prodüksiyon Desteği",
+        "location": "Mekan & Lokasyon",
+        "general": "Genel Bilgi"
+      }
+    },
+    "info": {
+      "address": "İstanbul, Türkiye",
+      "email": "info@ozyoglobal.com",
+      "phone": "+90 (212) 000 00 00",
+      "hours": "Pazartesi – Cuma, 09:00 – 18:00"
+    }
+  },
+  "footer": {
+    "tagline": "Dünyayı Keşfet, Bizi Güven.",
+    "links": "Hızlı Bağlantılar",
+    "brands": "Markalarımız",
+    "social": "Sosyal Medya",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "common": {
+    "learnMore": "Daha Fazla",
+    "contactUs": "İletişime Geç",
+    "backHome": "Ana Sayfaya Dön",
+    "loading": "Yükleniyor..."
+  }
+}

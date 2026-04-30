@@ -1,0 +1,188 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "brands": "Our Brands",
+    "contact": "Contact",
+    "getQuote": "Get a Quote"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Explore the World, Trust in Us",
+      "title": "Your Expert Partner\nin Global Tourism\nSolutions",
+      "subtitle": "From Europe to the Far East, from the Americas to the Middle East — seamless tourism services for agencies, corporations and production companies.",
+      "cta": "Explore Our Services",
+      "ctaSecondary": "Contact Us"
+    },
+    "imagery": {
+      "eyebrow": "Destinations",
+      "title": "Curated scenes from across the globe",
+      "subtitle": "A premium travel moodboard — reflecting reliable operations and unforgettable guest experiences.",
+      "captions": {
+        "cap1": "Open-road journeys and panoramic routes",
+        "cap2": "Detailed planning for every destination",
+        "cap3": "Coastal escapes and iconic shores",
+        "cap4": "Tropical downtime with a luxury feel"
+      }
+    },
+    "stats": {
+      "years": "Years of Experience",
+      "countries": "Countries",
+      "clients": "Happy Clients",
+      "support": "24/7 Support"
+    },
+    "brands": {
+      "title": "Our Brands",
+      "subtitle": "Four specialized brands delivering comprehensive tourism solutions under one roof.",
+      "learnMore": "Learn More"
+    },
+    "services": {
+      "title": "Core Services",
+      "subtitle": "We are with you at every point of the tourism ecosystem."
+    },
+    "about": {
+      "title": "Why Ozyo Global?",
+      "text": "Founded to provide accessible and simple solutions to agencies in the tourism sector, Ozyo Global saves you valuable time using today's and future technologies. We adopt the value that perfectly managed organizations bring to your brand after the right guidance.",
+      "learnMore": "Learn More"
+    },
+    "contact": {
+      "title": "Let's Talk About Your Project",
+      "subtitle": "Share your travel plan or business request with us.",
+      "cta": "Quote Form"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "hero": "Your Trusted Global Partner in Tourism",
+    "mission": {
+      "title": "Our Mission",
+      "text": "To provide easy, fast and reliable solutions to agencies in the tourism sector. To save valuable time with the support of today's and future technologies."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "To provide access to all local and consultancy services in Europe, the Americas, the Far East, the Middle East, the Balkans and CIS countries."
+    },
+    "values": {
+      "title": "Our Values",
+      "reliability": "Reliability",
+      "innovation": "Innovation",
+      "service": "Service Quality",
+      "global": "Global Perspective"
+    },
+    "team": {
+      "title": "Our Expert Team",
+      "text": "We are at your service 24/7 with our team of experienced, passionate and multilingual experts."
+    }
+  },
+  "services": {
+    "title": "Services",
+    "hero": "Comprehensive Tourism Services",
+    "subtitle": "Complete solutions in travel, accommodation, transportation and event management.",
+    "items": {
+      "flight": {
+        "title": "Flight Tickets",
+        "desc": "Affordable and reliable flight ticket procurement for all destinations."
+      },
+      "visa": {
+        "title": "Visa Services",
+        "desc": "End-to-end professional support for visa application processes."
+      },
+      "transfer": {
+        "title": "Transfer",
+        "desc": "VIP and group transfers between airports, hotels and event venues."
+      },
+      "accommodation": {
+        "title": "Accommodation",
+        "desc": "From boutique hotels to luxury chains — accommodation for every budget."
+      },
+      "tours": {
+        "title": "International Tours",
+        "desc": "International tour packages with professional guided tours."
+      },
+      "guide": {
+        "title": "Guided Tours",
+        "desc": "Unforgettable experiences with multilingual, experienced tour guides."
+      }
+    }
+  },
+  "brands": {
+    "title": "Our Brands",
+    "hero": "Four Specialized Brands",
+    "subtitle": "A family of brands shaped with deep expertise for every need.",
+    "dmc": {
+      "name": "Ozyo Global DMC",
+      "slug": "dmc",
+      "tagline": "Destination Management Excellence",
+      "short": "Professional DMC services for domestic and international operations.",
+      "description": "Ozyo Global DMC provides comprehensive destination management services in Turkey and worldwide for tour operators and travel agencies. We manage all operational processes from accommodation to transfers, activities to city tours.",
+      "services": ["Accommodation Management", "Airport Transfers", "City Tours", "Activity Organization", "Guide Services", "Flight & Visa Support"]
+    },
+    "mice": {
+      "name": "Ozyo Global MICE",
+      "slug": "mice",
+      "tagline": "Meetings, Incentives, Conferences & Exhibitions",
+      "short": "End-to-end service for corporate events and incentive programs.",
+      "description": "Ozyo Global MICE provides end-to-end service for corporate clients in congresses, seminars, trade fairs, corporate meetings and incentive travel. We carefully plan every detail of your event and create flawless experiences.",
+      "services": ["Congress & Conference Organization", "Incentive Travel Programs", "Corporate Event Management", "Trade Fair Organization", "Team Building Activities", "Gala & Reception Organization"]
+    },
+    "production": {
+      "name": "Ozyo Global Production",
+      "slug": "production",
+      "tagline": "Tourism Support for Film & Ad Productions",
+      "short": "Accommodation, transport, visa and logistics for production teams.",
+      "description": "Ozyo Global Production covers all travel and logistics needs for film, TV series and commercial production companies. We provide timely, reliable and flexible service even during intensive shooting schedules.",
+      "services": ["Crew Accommodation", "Equipment Transportation", "Group Flight Tickets", "Visa & Permit Consulting", "VIP Transfers", "Long-Term Vehicle Rental"]
+    },
+    "location": {
+      "name": "Ozyo Global Location",
+      "slug": "location",
+      "tagline": "Premier Venue & Location Services",
+      "short": "Event venues, filming locations and exclusive property rental.",
+      "description": "Ozyo Global Location connects clients with the most prestigious venues across Turkey, especially Istanbul, for events and productions. With our extensive portfolio of hotels, restaurants, historic buildings and private properties, we find your dream venue.",
+      "services": ["Hotel & Resort Rental", "Restaurant & Venue Rental", "Historic Venue Access", "Private Estate & Villa", "Location Scouting", "Venue Decoration & Setup"]
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "hero": "Get in Touch",
+    "subtitle": "Share your project, and our expert team will respond promptly.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company / Organization",
+      "subject": "Subject",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "success": "Your message has been sent! We will get back to you shortly.",
+      "error": "An error occurred. Please try again.",
+      "subjects": {
+        "dmc": "DMC Services",
+        "mice": "MICE & Events",
+        "production": "Production Support",
+        "location": "Venue & Location",
+        "general": "General Inquiry"
+      }
+    },
+    "info": {
+      "address": "Istanbul, Turkey",
+      "email": "info@ozyoglobal.com",
+      "phone": "+90 (212) 000 00 00",
+      "hours": "Monday – Friday, 09:00 – 18:00"
+    }
+  },
+  "footer": {
+    "tagline": "Explore the World, Trust in Us.",
+    "links": "Quick Links",
+    "brands": "Our Brands",
+    "social": "Social Media",
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us",
+    "backHome": "Back to Home",
+    "loading": "Loading..."
+  }
+}

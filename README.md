@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ozyo Global DMC – Kurumsal Website
 
-## Getting Started
+Modern, çok dilli (TR/EN/RU/ES) Next.js kurumsal web sitesi.
 
-First, run the development server:
+## Özellikler
+
+- **4 dil desteği**: Türkçe (varsayılan), İngilizce, Rusça, İspanyolca
+- **4 alt marka sayfası**: DMC, MICE, Production, Location
+- **Sayfalar**: Anasayfa, Hakkımızda, Hizmetler, Markalar, İletişim
+- **SEO**: sitemap.xml, robots.txt, hreflang, Open Graph
+- **Modern UI**: Siyah-beyaz minimal kimlik, responsive, Tailwind CSS 4
+- **Statik ağırlıklı**: Next.js App Router + next-intl
+
+## Kurulum
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # Geliştirme: http://localhost:3000
+npm run build      # Production build
+npm run start      # Production sunucu
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Proje Yapısı
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+ozyo-global/
+├── app/
+│   ├── [locale]/
+│   │   ├── layout.tsx          # Locale layout (Header + Footer)
+│   │   ├── page.tsx            # Anasayfa
+│   │   ├── hakkimizda/         # Hakkımızda sayfası
+│   │   ├── hizmetler/          # Hizmetler sayfası
+│   │   ├── markalar/           # Alt markalar listesi
+│   │   │   └── [slug]/         # Alt marka detay (dmc/mice/production/location)
+│   │   └── iletisim/           # İletişim formu
+│   ├── robots.ts
+│   └── sitemap.ts
+├── components/
+│   ├── layout/
+│   │   ├── Header.tsx          # Sticky header + dil seçici
+│   │   └── Footer.tsx
+│   ├── home/
+│   │   ├── Hero.tsx
+│   │   ├── StatsSection.tsx
+│   │   ├── BrandsSection.tsx
+│   │   ├── ServicesSection.tsx
+│   │   ├── AboutSection.tsx
+│   │   └── CtaSection.tsx
+│   └── ContactForm.tsx
+├── messages/
+│   ├── tr.json                 # Türkçe (kaynak)
+│   ├── en.json
+│   ├── ru.json
+│   └── es.json
+├── i18n/
+│   ├── routing.ts
+│   └── request.ts
+└── proxy.ts                    # next-intl routing proxy
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## İçerik Güncellemesi
 
-## Learn More
+Tüm metinler `messages/*.json` dosyalarından yönetilir. Türkçe ana dil olduğu için `tr.json`'dan başlanmalıdır.
 
-To learn more about Next.js, take a look at the following resources:
+## İletişim Formu (Backend Entegrasyonu)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`components/ContactForm.tsx` içindeki `handleSubmit` fonksiyonunu gerçek bir API endpoint'i ile bağlayabilirsiniz. Önerilen: [Resend](https://resend.com) (paket zaten kurulu).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Dağıtım (Deploy)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[Vercel](https://vercel.com) ile en kolay deploy edilir:
+```bash
+npm i -g vercel
+vercel
+```
