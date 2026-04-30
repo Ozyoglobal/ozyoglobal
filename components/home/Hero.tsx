@@ -14,7 +14,7 @@ export function Hero() {
       <AnimatedGlobe />
 
       {/* Sol gradient: metin okunurluğu */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black via-black/85 to-transparent" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black via-black/75 to-transparent" />
       {/* Alt gradient */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent" />
       {/* Üst gradient */}

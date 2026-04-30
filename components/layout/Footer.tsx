@@ -104,9 +104,9 @@ export function Footer() {
             © {new Date().getFullYear()} Ozyo Global DMC. {t("rights")}
           </p>
           <div className="flex gap-6">
-            <Link href={`/${locale}/iletisim`} className="text-xs hover:text-white transition-colors">
-              info@ozyoglobal.com
-            </Link>
+            <a href="mailto:operations@ozyoglobal.com" className="text-xs hover:text-white transition-colors">
+              operations@ozyoglobal.com
+            </a>
           </div>
         </div>
       </div>

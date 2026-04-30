@@ -39,7 +39,8 @@
     },
     "services": {
       "title": "Основные услуги",
-      "subtitle": "Мы рядом на каждом этапе туристической экосистемы."
+      "subtitle": "Мы рядом на каждом этапе туристической экосистемы.",
+      "viewAll": "Все услуги"
     },
     "about": {
       "title": "Почему Ozyo Global?",
@@ -166,9 +167,9 @@
       }
     },
     "info": {
-      "address": "Стамбул, Турция",
-      "email": "info@ozyoglobal.com",
-      "phone": "+90 (212) 000 00 00",
+      "address": "Caferağa, Moda Cd. Yasemin Apt No:79 D1, 34722 Kadıköy/İstanbul",
+      "email": "operations@ozyoglobal.com",
+      "phone": "+90 216 347 55 84",
       "hours": "Понедельник – Пятница, 09:00 – 18:00"
     }
   },
