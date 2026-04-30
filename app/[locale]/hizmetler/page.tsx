@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export async function generateMetadata({
@@ -25,26 +26,20 @@ const serviceKeys = [
   "guide",
 ] as const;
 
-const serviceIcons = [
-  <svg key="flight" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-  </svg>,
-  <svg key="visa" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-  </svg>,
-  <svg key="transfer" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-  </svg>,
-  <svg key="accom" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-  </svg>,
-  <svg key="tours" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-  </svg>,
-  <svg key="guide" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-  </svg>,
-];
+const serviceImages: Record<string, string> = {
+  flight:
+    "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80",
+  visa:
+    "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=900&q=80",
+  transfer:
+    "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=900&q=80",
+  accommodation:
+    "https://images.unsplash.com/photo-1455587734955-081b22074882?auto=format&fit=crop&w=900&q=80",
+  tours:
+    "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=80",
+  guide:
+    "https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=900&q=80",
+};
 
 export default async function ServicesPage({
   params,
@@ -80,31 +75,46 @@ export default async function ServicesPage({
         </div>
       </section>
 
-      {/* Services grid */}
+      {/* Services grid — cards with hero image */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {serviceKeys.map((key, i) => (
-              <div
+            {serviceKeys.map((key) => (
+              <Link
                 key={key}
                 id={`svc-${key}`}
-                className="group relative rounded-3xl border border-zinc-200 bg-white p-8 hover:border-zinc-400 hover:shadow-lg transition-all duration-300 overflow-hidden scroll-mt-28"
+                href={`/${locale}/hizmetler/${key}`}
+                scroll={false}
+                className="group relative rounded-3xl border border-zinc-200 bg-white overflow-hidden hover:border-zinc-400 hover:shadow-xl transition-all duration-300 scroll-mt-28 flex flex-col"
               >
-                <div className="absolute top-0 right-0 text-zinc-100 font-bold text-6xl leading-none select-none p-4">
-                  {String(i + 1).padStart(2, "0")}
-                </div>
-                <div className="relative z-10">
-                  <div className="w-16 h-16 rounded-2xl bg-zinc-100 flex items-center justify-center text-zinc-600 mb-6 group-hover:bg-zinc-900 group-hover:text-white transition-all duration-300">
-                    {serviceIcons[i]}
-                  </div>
-                  <h3 className="text-xl font-semibold text-zinc-900 mb-3">
+                {/* Görsel */}
+                <div className="relative h-52 w-full overflow-hidden">
+                  <Image
+                    src={serviceImages[key]}
+                    alt={items(`${key}.title`)}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-[1.06]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60" />
+                  <h3 className="absolute bottom-4 left-5 text-lg font-semibold text-white">
                     {items(`${key}.title`)}
                   </h3>
+                </div>
+
+                {/* Açıklama */}
+                <div className="flex flex-1 flex-col justify-between p-6">
                   <p className="text-zinc-500 leading-relaxed text-sm">
                     {items(`${key}.desc`)}
                   </p>
+                  <div className="mt-5 flex items-center gap-1.5 text-xs font-semibold text-zinc-900 group-hover:gap-3 transition-all duration-200">
+                    {common("learnMore")}
+                    <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
