@@ -148,6 +148,9 @@
     "title": "Контакты",
     "hero": "Свяжитесь с нами",
     "subtitle": "Расскажите о вашем проекте, и наша команда оперативно ответит.",
+    "infoSidebarTitle": "Контактная информация",
+    "quickReplyTitle": "Быстрый ответ",
+    "quickReplyBody": "На все запросы отвечаем в течение 24 часов. В срочных случаях звоните напрямую.",
     "form": {
       "name": "Имя и фамилия",
       "email": "Эл. почта",
@@ -170,8 +173,13 @@
       "address": "Caferağa, Moda Cd. Yasemin Apt No:79 D1, 34722 Kadıköy/İstanbul",
       "email": "operations@ozyoglobal.com",
       "phone": "+90 216 347 55 84",
-      "hours": "Понедельник – Пятница, 09:00 – 18:00"
+      "hours": "Понедельник – Пятница, 09:00 – 18:00",
+      "directions": "Маршрут в картах"
     }
+  },
+  "crossLinks": {
+    "relatedServicesTitle": "Связанные услуги",
+    "relatedBrandsTitle": "В каких брендах доступна услуга?"
   },
   "footer": {
     "tagline": "Откройте мир, доверьтесь нам.",

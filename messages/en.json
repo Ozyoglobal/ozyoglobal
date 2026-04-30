@@ -148,6 +148,9 @@
     "title": "Contact",
     "hero": "Get in Touch",
     "subtitle": "Share your project, and our expert team will respond promptly.",
+    "infoSidebarTitle": "Contact Details",
+    "quickReplyTitle": "Quick Response",
+    "quickReplyBody": "We respond to all inquiries within 24 hours. For urgent matters, please call us directly.",
     "form": {
       "name": "Full Name",
       "email": "Email",
@@ -170,8 +173,13 @@
       "address": "Caferağa, Moda Cd. Yasemin Apt No:79 D1, 34722 Kadıköy/İstanbul",
       "email": "operations@ozyoglobal.com",
       "phone": "+90 216 347 55 84",
-      "hours": "Monday – Friday, 09:00 – 18:00"
+      "hours": "Monday – Friday, 09:00 – 18:00",
+      "directions": "Get directions"
     }
+  },
+  "crossLinks": {
+    "relatedServicesTitle": "Related service pages",
+    "relatedBrandsTitle": "Which brands offer this service?"
   },
   "footer": {
     "tagline": "Explore the World, Trust in Us.",

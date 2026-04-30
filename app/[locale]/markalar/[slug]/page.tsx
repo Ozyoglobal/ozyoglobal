@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { BRAND_RELATED_SERVICES } from "@/lib/crossLinks";
+import { telHref } from "@/lib/contact";
 
 const validSlugs = ["dmc", "mice", "production", "location"] as const;
 type BrandSlug = (typeof validSlugs)[number];
@@ -277,6 +279,8 @@ export default async function BrandDetailPage({
   const contact = await getTranslations({ locale, namespace: "contact" });
   const nav = await getTranslations({ locale, namespace: "nav" });
   const common = await getTranslations({ locale, namespace: "common" });
+  const crossLinks = await getTranslations({ locale, namespace: "crossLinks" });
+  const serviceItems = await getTranslations({ locale, namespace: "services.items" });
 
   const services = t.raw(`${brandSlug}.services`) as string[];
   const data = brandData[brandSlug];
@@ -381,6 +385,33 @@ export default async function BrandDetailPage({
                   ))}
                 </div>
               </div>
+
+              {/* İlgili hizmet detay sayfaları */}
+              <div>
+                <h3 className="text-lg font-semibold text-zinc-900 mb-5">
+                  {crossLinks("relatedServicesTitle")}
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {BRAND_RELATED_SERVICES[brandSlug].map((key) => (
+                    <Link
+                      key={key}
+                      href={`/${locale}/hizmetler/${key}`}
+                      className="group rounded-2xl border border-zinc-200 bg-zinc-50/80 p-5 transition-all hover:border-zinc-900 hover:bg-white hover:shadow-md"
+                    >
+                      <div className="text-sm font-semibold text-zinc-900">{serviceItems(`${key}.title`)}</div>
+                      <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-zinc-500">
+                        {serviceItems(`${key}.desc`)}
+                      </p>
+                      <span className="mt-3 inline-flex items-center gap-1 text-[11px] font-semibold uppercase tracking-wider text-zinc-400 transition-colors group-hover:text-zinc-900">
+                        {common("learnMore")}
+                        <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </div>
 
             {/* Sidebar */}
@@ -394,6 +425,20 @@ export default async function BrandDetailPage({
                 >
                   {common("contactUs")}
                 </Link>
+                <div className="mt-4 flex flex-col gap-2">
+                  <a
+                    href={telHref(contact("info.phone"))}
+                    className="block rounded-xl border border-white/25 py-2.5 text-center text-sm font-medium text-white hover:bg-white/10 transition-colors"
+                  >
+                    {contact("info.phone")}
+                  </a>
+                  <a
+                    href={`mailto:${contact("info.email")}`}
+                    className="block rounded-xl border border-white/25 px-2 py-2.5 text-center text-xs font-medium text-white hover:bg-white/10 transition-colors break-all"
+                  >
+                    {contact("info.email")}
+                  </a>
+                </div>
               </div>
 
               <div className="bg-zinc-50 rounded-3xl p-8 border border-zinc-200">

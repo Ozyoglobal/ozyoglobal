@@ -7,6 +7,7 @@ import { BrandLogo } from "@/components/brand/BrandLogo";
 import { useTranslations, useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { telHref } from "@/lib/contact";
 
 const localeLabels: Record<string, string> = {
   tr: "TR",
@@ -24,6 +25,7 @@ export function Header() {
   const tServices = useTranslations("services");
   const tItems = useTranslations("services.items");
   const tBrands = useTranslations("brands");
+  const tContact = useTranslations("contact");
   const locale = useLocale();
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
@@ -217,6 +219,21 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
+            <a
+              href={telHref(tContact("info.phone"))}
+              className={cn("text-sm font-medium tracking-wide whitespace-nowrap", navMuted)}
+            >
+              {tContact("info.phone")}
+            </a>
+            <a
+              href={`mailto:${tContact("info.email")}`}
+              className={cn("text-sm font-medium", navMuted)}
+              aria-label={tContact("info.email")}
+            >
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </a>
             <div className="relative" ref={langRef}>
               <button
                 type="button"
@@ -364,6 +381,21 @@ export function Header() {
             >
               {t("contact")}
             </Link>
+
+            <a
+              href={telHref(tContact("info.phone"))}
+              onClick={() => setMenuOpen(false)}
+              className="block rounded-lg px-3 py-2.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50"
+            >
+              {tContact("info.phone")}
+            </a>
+            <a
+              href={`mailto:${tContact("info.email")}`}
+              onClick={() => setMenuOpen(false)}
+              className="block rounded-lg px-3 py-2.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 break-all"
+            >
+              {tContact("info.email")}
+            </a>
 
             <div className="flex flex-wrap gap-3 border-t border-zinc-100 pt-3 mt-3">
               {locales.map((loc) => (

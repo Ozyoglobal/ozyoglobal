@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { BrandLogo } from "@/components/brand/BrandLogo";
+import { googleMapsSearchUrl, telHref } from "@/lib/contact";
 
 export function Footer() {
   const t = useTranslations("footer");
   const nav = useTranslations("nav");
+  const contact = useTranslations("contact");
   const locale = useLocale();
   const brands = useTranslations("brands");
 
@@ -58,6 +60,31 @@ export function Footer() {
                 </svg>
               </a>
             </div>
+            <div className="mt-6 flex flex-col gap-2 text-sm">
+              <a
+                href={telHref(contact("info.phone"))}
+                className="w-fit text-zinc-400 hover:text-white transition-colors"
+              >
+                {contact("info.phone")}
+              </a>
+              <a
+                href={`mailto:${contact("info.email")}`}
+                className="w-fit break-all text-zinc-400 hover:text-white transition-colors"
+              >
+                {contact("info.email")}
+              </a>
+              <a
+                href={googleMapsSearchUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-fit items-center gap-1 text-zinc-400 hover:text-white transition-colors"
+              >
+                {contact("info.directions")}
+                <svg className="h-3 w-3 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -103,9 +130,20 @@ export function Footer() {
           <p className="text-xs text-zinc-600">
             © {new Date().getFullYear()} Ozyo Global DMC. {t("rights")}
           </p>
-          <div className="flex gap-6">
-            <a href="mailto:operations@ozyoglobal.com" className="text-xs hover:text-white transition-colors">
-              operations@ozyoglobal.com
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 md:justify-end">
+            <a href={telHref(contact("info.phone"))} className="text-xs hover:text-white transition-colors">
+              {contact("info.phone")}
+            </a>
+            <a href={`mailto:${contact("info.email")}`} className="text-xs hover:text-white transition-colors">
+              {contact("info.email")}
+            </a>
+            <a
+              href={googleMapsSearchUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs hover:text-white transition-colors"
+            >
+              {contact("info.directions")}
             </a>
           </div>
         </div>

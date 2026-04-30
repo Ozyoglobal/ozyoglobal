@@ -148,6 +148,9 @@
     "title": "İletişim",
     "hero": "Bizimle İletişime Geçin",
     "subtitle": "Projenizi paylaşın, uzman ekibimiz en kısa sürede yanıt versin.",
+    "infoSidebarTitle": "İletişim Bilgileri",
+    "quickReplyTitle": "Hızlı Yanıt",
+    "quickReplyBody": "Tüm taleplere en geç 24 saat içinde yanıt veriyoruz. Acil durumlar için doğrudan telefon ile ulaşabilirsiniz.",
     "form": {
       "name": "Ad Soyad",
       "email": "E-Posta",
@@ -170,8 +173,13 @@
       "address": "Caferağa, Moda Cd. Yasemin Apt No:79 D1, 34722 Kadıköy/İstanbul",
       "email": "operations@ozyoglobal.com",
       "phone": "+90 216 347 55 84",
-      "hours": "Pazartesi – Cuma, 09:00 – 18:00"
+      "hours": "Pazartesi – Cuma, 09:00 – 18:00",
+      "directions": "Yol Tarifi Al"
     }
+  },
+  "crossLinks": {
+    "relatedServicesTitle": "İlgili hizmet sayfaları",
+    "relatedBrandsTitle": "Bu hizmet hangi markalarımızda?"
   },
   "footer": {
     "tagline": "Dünyayı Keşfet, Bizi Güven.",
